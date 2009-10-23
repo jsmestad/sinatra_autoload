@@ -6,8 +6,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "sinatra_autoload"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Auto loader for required sinatra files.}
+    gem.description = %Q{Do not load files into memory until they are accessed / needed inside your application.}
     gem.email = "justin.smestad@gmail.com"
     gem.homepage = "http://github.com/jsmestad/sinatra_autoload"
     gem.authors = ["Justin Smestad", "Gabe Varela"]
