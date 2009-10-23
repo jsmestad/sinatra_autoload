@@ -1,6 +1,21 @@
 = sinatra_autoload
 
-Description goes here.
+Do not load files into memory until they are accessed / needed inside your application.
+
+== Usage
+
+  require 'sinatra'
+  require 'sinatra_autoload'
+
+  SinatraAutoload.directories('models', 'lib', 'modules')
+
+  class MyApplication < Sinatra::Base
+
+    get '/users/:user_id' do
+      User.get(params["user_id"]) # User model is now loaded.
+    end
+
+  end
 
 == Note on Patches/Pull Requests
  
@@ -12,6 +27,11 @@ Description goes here.
   (if you want to have your own version, that is fine but
    bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
+
+== Contributers
+
+* Justin Smestad (http://github.com/jsmestad)
+* Gabe Varela (http://github.com/gvarela)
 
 == Copyright
 
