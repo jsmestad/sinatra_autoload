@@ -15,7 +15,7 @@ module SinatraAutoload
     return unless args
     args.each do |file_path|
       Dir[ File.join( @root_path, file_path, '/**/*.rb') ].each do |file|
-        require file
+        autoload File.basename(file, '.rb').classify.to_sym, file
       end
     end
   end
