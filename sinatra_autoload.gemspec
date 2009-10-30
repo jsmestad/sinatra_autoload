@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sinatra_autoload}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Smestad", "Gabe Varela"]
-  s.date = %q{2009-10-23}
+  s.date = %q{2009-10-30}
   s.description = %q{Do not load files into memory until they are accessed / needed inside your application.}
   s.email = %q{justin.smestad@gmail.com}
   s.executables = ["autospec", "rackup", "rcov", "spec", "yard-graph", "yardoc", "yri"]
@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
      "lib/sinatra_autoload.rb",
      "lib/sinatra_autoload/autoload.rb",
      "lib/sinatra_autoload/classify.rb",
+     "sinatra_autoload.gemspec",
      "spec/sinatra_autoload_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
